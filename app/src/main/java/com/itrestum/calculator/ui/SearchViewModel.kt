@@ -6,10 +6,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.itrestum.calculator.History
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.launch
 import net.objecthunter.exp4j.ExpressionBuilder
-import java.lang.Exception
 
 class SearchViewModel(private val repository: MainRepository) : ViewModel() {
 
@@ -41,7 +39,6 @@ class SearchViewModel(private val repository: MainRepository) : ViewModel() {
         } catch (e: Exception) {
             Log.d("Error!", "Message: ${e.message}")
         }
-
     }
 
     fun onClearHistory() {

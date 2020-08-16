@@ -6,6 +6,6 @@ import org.koin.dsl.module
 
 private const val DB_NAME = "history-db"
 val databaseModules = module {
-    single { Room.databaseBuilder(get(), AppDatabase::class.java, DB_NAME).allowMainThreadQueries().build() }
+    single { Room.databaseBuilder(get(), AppDatabase::class.java, DB_NAME).build() }
     single { get<AppDatabase>().historyDao() }
 }

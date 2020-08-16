@@ -1,22 +1,18 @@
 package com.itrestum.calculator.ui
 
-import com.itrestum.calculator.ResultsFragment
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.itrestum.calculator.History
 import com.itrestum.calculator.R
+import com.itrestum.calculator.ResultsFragment
 import com.itrestum.calculator.databinding.ActivitySearchBinding
 import com.itrestum.calculator.extension.observe
-import kotlinx.android.synthetic.main.activity_main.*
-import net.objecthunter.exp4j.ExpressionBuilder
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import java.lang.Exception
 
 class SearchActivity : AppCompatActivity() {
     private val viewModel: SearchViewModel by viewModel()
 
-    val fragment = ResultsFragment()
+    private val fragment = ResultsFragment()
 
     private lateinit var binding: ActivitySearchBinding
 
@@ -80,8 +76,8 @@ class SearchActivity : AppCompatActivity() {
         binding.resultText.text = value
     }
 
-    fun setTextFields(str: String) {
-        math_operation.append(str)
+    private fun setTextFields(str: String) {
+        binding.mathOperation.append(str)
     }
 
     private fun updateHistory(value: String?) {
