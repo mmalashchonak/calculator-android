@@ -11,11 +11,11 @@
         android:id="@+id/math_operation"
         android:layout_width="match_parent"
         android:layout_height="100sp"
+        android:background="@android:color/holo_green_dark"
         android:ellipsize="start"
         android:gravity="end"
         android:textColor="@android:color/black"
         android:textSize="68sp"
-        android:background="@android:color/holo_green_dark"
         app:layout_constraintBottom_toTopOf="@+id/result_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -28,12 +28,12 @@
         android:id="@+id/result_text"
         android:layout_width="match_parent"
         android:layout_height="100sp"
+        android:background="@android:color/holo_red_dark"
         android:ellipsize="end"
         android:gravity="end"
         android:singleLine="true"
         android:textColor="@android:color/black"
         android:textSize="50sp"
-        android:background="@android:color/holo_red_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,13 +48,13 @@
         android:text="AC"
         app:layout_constraintEnd_toStartOf="@+id/btn_brc_r"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result_text"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_brc_r"
@@ -64,13 +64,13 @@
         android:text="("
         app:layout_constraintEnd_toStartOf="@+id/btn_brc_l"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btn_ac"
         app:layout_constraintTop_toBottomOf="@+id/result_text"
         app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_brc_l"
@@ -80,12 +80,12 @@
         android:text=")"
         app:layout_constraintEnd_toStartOf="@+id/btn_divide"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btn_brc_r"
         app:layout_constraintTop_toBottomOf="@+id/result_text"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_divide"
@@ -95,13 +95,13 @@
         android:text="/"
         app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toEndOf="@+id/btn_brc_l"
         app:layout_constraintTop_toBottomOf="@+id/result_text"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_7"
@@ -111,12 +111,13 @@
         android:text="7"
         app:layout_constraintEnd_toStartOf="@+id/btn_8"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_ac" app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ac"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_8"
@@ -126,13 +127,13 @@
         android:text="8"
         app:layout_constraintEnd_toStartOf="@+id/btn_9"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toEndOf="@+id/btn_7"
         app:layout_constraintTop_toBottomOf="@+id/btn_brc_r"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_9"
@@ -142,12 +143,12 @@
         android:text="9"
         app:layout_constraintEnd_toStartOf="@+id/btn_mult"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btn_8"
         app:layout_constraintTop_toBottomOf="@+id/btn_brc_l"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_mult"
@@ -157,13 +158,13 @@
         android:text="*"
         app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toEndOf="@+id/btn_9"
         app:layout_constraintTop_toBottomOf="@+id/btn_divide"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_4"
@@ -173,13 +174,13 @@
         android:text="4"
         app:layout_constraintEnd_toStartOf="@+id/btn_5"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_7"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_5"
@@ -189,13 +190,13 @@
         android:text="5"
         app:layout_constraintEnd_toStartOf="@+id/btn_6"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toEndOf="@+id/btn_4"
         app:layout_constraintTop_toBottomOf="@+id/btn_8"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_6"
@@ -205,12 +206,12 @@
         android:text="6"
         app:layout_constraintEnd_toStartOf="@+id/btn_plus"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btn_5"
         app:layout_constraintTop_toBottomOf="@+id/btn_9"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_plus"
@@ -220,13 +221,13 @@
         android:text="+"
         app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toEndOf="@+id/btn_6"
         app:layout_constraintTop_toBottomOf="@+id/btn_mult"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_1"
@@ -236,13 +237,13 @@
         android:text="1"
         app:layout_constraintEnd_toStartOf="@+id/btn_2"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_4"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_2"
@@ -252,13 +253,13 @@
         android:text="2"
         app:layout_constraintEnd_toStartOf="@+id/btn_3"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toEndOf="@+id/btn_1"
         app:layout_constraintTop_toBottomOf="@+id/btn_5"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_3"
@@ -268,12 +269,12 @@
         android:text="3"
         app:layout_constraintEnd_toStartOf="@+id/btn_minus"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btn_2"
         app:layout_constraintTop_toBottomOf="@+id/btn_6"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_minus"
@@ -283,13 +284,13 @@
         android:text="-"
         app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toEndOf="@+id/btn_3"
         app:layout_constraintTop_toBottomOf="@+id/btn_plus"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_dot"
@@ -300,13 +301,13 @@
 
         app:layout_constraintEnd_toStartOf="@+id/btn_0"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_1"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_0"
@@ -317,13 +318,13 @@
 
         app:layout_constraintEnd_toStartOf="@+id/btn_back"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toEndOf="@+id/btn_dot"
         app:layout_constraintTop_toBottomOf="@+id/btn_2"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_back"
@@ -333,12 +334,12 @@
         android:text="Back"
         app:layout_constraintEnd_toStartOf="@+id/btn_eql"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btn_0"
         app:layout_constraintTop_toBottomOf="@+id/btn_3"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/btn_eql"
@@ -349,13 +350,13 @@
 
         app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintStart_toEndOf="@+id/btn_back"
         app:layout_constraintTop_toBottomOf="@+id/btn_minus"
-
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"/>
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintVertical_weight="1" />
 
 
     <FrameLayout

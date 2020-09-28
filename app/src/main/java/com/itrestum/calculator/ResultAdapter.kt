@@ -6,17 +6,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.view_result.view.*
 
-
 class ResultAdapter : RecyclerView.Adapter<ResultAdapter.ResultViewHolder>() {
-    private val results = mutableListOf<Result>()
+    private val results = mutableListOf<String>()
 
-    fun addItem(result:Result){
+    fun addItem(result: String) {
         results.add(result)
-        notifyDataSetChanged()
-    }
-
-    fun clearAll() {
-        results.clear()
         notifyDataSetChanged()
     }
 
@@ -34,9 +28,8 @@ class ResultAdapter : RecyclerView.Adapter<ResultAdapter.ResultViewHolder>() {
     }
 
     class ResultViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        fun bind(result: Result) {
-            itemView.input.text = result.input
-            //itemView.output.text = result.output
+        fun bind(result: String) {
+            itemView.input.text = result
         }
     }
 }
